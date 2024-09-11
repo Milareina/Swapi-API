@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swapi API Search</title>
+  </head>
+  <body>
+    <h1>Кого или что будем искать?</h1>
+    <select id="entityType">
+      <option value="people">Людей</option>
+      <option value="planets">Планеты</option>
+      <option value="films">Фильмы</option>
+    </select>
+
+    <input
+      type="number"
+      id="entityId"
+      min="1"
+      max="13"
+      placeholder="Введите ID (1-10)"
+    />
+    <button id="searchBtn">Вперед!</button>
+
+    <p id="loading">Идёт загрузка...</p>
+    <p id="result"></p>
+    <p id="error" style="color: red"></p>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
